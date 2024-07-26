@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Queiroz Dev</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Vincula o estilo dos ícones do Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- Script do emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "PahaYy0x20vJmVd3V",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Link para a seção inicial, usado como logo -->
+        <a href="#home" class="logo">Patrick <span>Queiroz</span></a>
+
+        <!-- Ícone do menu -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <!-- Barra de navegação -->
+        <nav class="navbar">
+            <a href="#home" class="active">Início</a>
+            <a href="#curriculo">Currículo</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Início -->
+    <section class="home" id="home">
+        <div class="home-content">
+
+            <!-- Saudação e introdução -->
+            <h1>Olá, sou <span>Patrick</span></h1>
+            <h3 class="text-animation"><span></span></h3>
+            <p>Desenvolvedor web, com uma sólida formação em Análise e Desenvolvimento de Sistemas, buscando
+                dominar as melhores práticas em HTML, CSS e JavaScript para desenvolver soluções web modernas e
+                responsivas. Meu portfólio de projetos no GitHub reflete meu compromisso com a prática contínua e o
+                aperfeiçoamento dos meus conhecimentos. Através desses projetos, busco constantemente inovar para
+                corresponder às demandas
+                do mercado de trabalho.</p>
+
+            <!-- Redes sociais -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/patricksq/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/queirozPatrick" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/patrickincode/" target="_blank"><i
+                        class='bx bxl-instagram-alt'></i></a>
+                <a href="https://wa.me/+5511965012680" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+
+            <!-- Imagem do perfil -->
+        </div>
+        <div class="home-img">
+            <img src="img/img.jpg" alt="img do perfil">
+        </div>
+    </section>
+
+    <!-- Seção Currículo -->
+    <section class="curriculo" id="curriculo">
+        <h2 class="heading">Currículo</h2>
+
+        <div class="timeline-items">
+            <!-- Primeiro item do currículo -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>Bootcamp Mobile Developer</h3>
+                    <p>Com uma carga horária de 80 horas, o curso foi ministrado pela Digital Innovation One em parceria
+                        com o Grupo Santander. Durante o curso, aprendemos a criar, modificar e manipular dados de
+                        aplicativos móveis utilizando Kotlin e Java.</p>
+                    <a href="https://hermes.dio.me/certificates/FC708F5B.pdf" class="certificados"
+                        target="_blank">Certificado<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Segundo item do currículo -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>Udemy</h3>
+                    <p>Com uma carga horária de 146 horas, o curso foi ministrado pela Udemy com o objetivo de fornecer
+                        uma base de conhecimento em JavaScript e TypeScript para front-end e back-end (Full Stack).
+                        Durante o curso, realizamos diversos projetos práticos para consolidar o conteúdo aprendido.</p>
+                    <a href="https://hermes.dio.me/certificates/FC708F5B.pdf" class="certificados"
+                        target="_blank">Certificado<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Terceiro item do currículo -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>Ensino Superior</h3>
+                    <p>Graduado em Análise e Desenvolvimento de Sistemas pela Universidade Estácio de Sá, com conclusão
+                        em junho de 2024 e CR de 9,42, pude aproveitar todo o conhecimento teórico apresentado na grade
+                        curricular para consolidar o aprendizado teórico com a prática.</p>
+                    <a href="https://hermes.dio.me/certificates/FC708F5B.pdf" class="certificados"
+                        target="_blank">Certificado<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Quarto item do currículo -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Primeiro Projeto</h3>
+                    <p>Meu primeiro trabalho como freelancer foi realizado para uma associação de corte e costura.
+                        Desenvolvi desde o início uma landing page com informações sobre o projeto, utilizando HTML, CSS
+                        e JavaScript.</p>
+                    <a href="https://hermes.dio.me/certificates/FC708F5B.pdf" class="certificados"
+                        target="_blank">Associação<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section class="servicos" id="servicos">
+        <h2 class="heading">Serviços</h2>
+        <div class="services-container">
+
+            <!-- Box de serviço -->
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Criação</h4>
+                    <p>Envolve a concepção inicial, brainstorming de ideias, pesquisa de mercado e definição de objetivos. É onde se desenham wireframes e protótipos para visualizar a estrutura e o layout do site ou aplicação.</p>
+                </div>
+            </div>
+
+            <!-- Segundo box de serviço -->
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Desenvolvimento</h4>
+                    <p>Nesta fase, utiliza-se HTML, CSS, JavaScript e outras tecnologias para transformar os designs em realidade. Inclui codificação, integração de APIs, desenvolvimento de funcionalidades e testes rigorosos para garantir a qualidade.</p>
+                </div>
+            </div>
+
+            <!-- Terceiro box de serviço -->
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Manutenção</h4>
+                    <p>Após o lançamento, é essencial manter o site atualizado e funcionando perfeitamente. Isso envolve a correção de bugs, atualizações de segurança, otimização de desempenho e adição de novos recursos conforme necessário.</p>
+                </div>
+            </div>
+
+            <!-- Quarto box de serviço -->
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Suporte</h4>
+                    <p>Fornecer suporte técnico aos usuários é crucial para resolver problemas, responder a dúvidas e garantir uma experiência positiva. Isso pode incluir suporte via e-mail, chat, telefone e criação de documentação e tutoriais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contatos -->
+    <section class="contato" id="contato">
+        <h2 class="heading">Fale <span>comigo!</span></h2>
+        <form action="https://formsubmit.co/patrick.sq52@gmail.com" method="POST">
+
+            <!-- Grupo de inputs -->
+            <div class="input-group" id="contact-form">
+                <div class="input-box" id="contact-form">
+                    <input type="text" name="Nome" placeholder="Nome completo" required>
+                    <input type="email" name="E-mail" placeholder="E-mail" required>
+                </div>
+                <div class="input-box" id="contact-form">
+                    <input type="number" name="Celular" placeholder="Celular">
+                    <input type="text" name="Assunto" placeholder="Assunto" required>
+                </div>
+            </div>
+
+            <!-- Segundo grupo de inputs -->
+            <div class="input-group-2" id="contact-form">
+                <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
+                <input type="submit" value="Enviar" class="btn-send">
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <!-- Links de redes sociais -->
+        <div class="social">
+            <a href="https://www.linkedin.com/in/patricksq/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/queirozPatrick" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/patrickincode/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://wa.me/+5511965012680" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+
+        <!-- Lista de links rápidos -->
+        <ul class="list">
+            <li><a href="#home">SAC</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#curriculo">Sobre mim</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <!-- Direitos autorais -->
+        <p class="copyright">© Patrick Queiroz | Desenvolvedor Web</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
