@@ -523,6 +523,37 @@ span {
     margin: 2rem;
 }
 
+/* Estilo pagina de obrigado */
+
+.main-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--second-bg-color);
+    flex-direction: column;
+}
+
+.texto {
+    font-size: 45px;
+    color: var(--second-text-color);
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: var(--second-text-color);
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.btn-email {
+    padding: 15px 55px;
+    background: #ffffff;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
 /* Define estilo para botões */
 .btn-send {
     display: inline-block;
